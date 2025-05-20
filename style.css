@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffd5;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 30px #00ffd5;
+  backdrop-filter: blur(10px);
+  animation: pulse 4s infinite;
+}
+
+.image-glow {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #00ffd5;
+  box-shadow: 0 0 20px #00ffd5, 0 0 40px #00ffd5;
+  margin: 0 auto 1rem;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.role {
+  color: #00ffd5;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.details p {
+  margin: 0.2rem 0;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.creator {
+  color: #00ffd5;
+}
+
+/* Glowing animation */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px #00ffd5, 0 0 30px #00ffd5;
+  }
+  50% {
+    box-shadow: 0 0 40px #00ffd5, 0 0 60px #00ffd5;
+  }
+    }
